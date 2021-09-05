@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Contact Form</title>
+
+    <style>
+      .nav-tabs{
+        border: none;
+      }
+
+      .nav-tabs .nav-link.active{
+        background-color: #1888f5;
+        color: white;
+        border: 3px solid #1888f5;
+      }
+      .nav-tabs .nav-link{
+        background-color: #fff;
+        color: #1888f5;
+        border: 3px solid #1888f5;
+        margin-right: 2rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+
+      .nav-tabs .nav-link:hover{
+        border: 3px solid #1888f5;
+      }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container bg-white">
+        <h2 class="text-center">Contact now</h2>
+       <hr>
+       <ul class="nav nav-tabs justify-content-center">
+         <li class="nav-item"><a class="nav-link active" data-bs-toggle href="#pre-sales"> Pre-Sales</a></li>
+         <li class="nav-item"><a class="nav-link" href="project_proposal.html">Project Propsal</a></li>
+         <li class="nav-item"><a class="nav-link" href="other.html">Other</a></li>
+       </ul>
+       <br>
+      <div class="row" id="pre-sales">
+          <div class="col-md-6">
+            <div class="mb-3">
+                <label for="title" class="form-label">Which product we can help you with? *</label>
+                <input type="text" class="form-control" id="title" placeholder="Enter Your Product Name/Title *">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email *</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email *">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+                <label for="password" class="form-label">First Name *</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name *">
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="form-group">
+              <label for="description" class="form-label">Deacription *</label>
+                <textarea name="message" class="form-control" id="message" cols="30" rows="6" placeholder="Product Description"></textarea>
+            </div>
+          </div>
+          <div class="button text-center">
+            <input type="submit" class="btn btn-primary text-center" value="SEND">
+          </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

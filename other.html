@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Contact Form</title>
+
+    <style>
+      .nav-tabs{
+        border: none;
+      }
+
+      .nav-tabs .nav-link.active{
+        background-color: #1888f5;
+        color: white;
+        border: 3px solid #1888f5;
+      }
+      .nav-tabs .nav-link{
+        background-color: #fff;
+        color: #1888f5;
+        border: 3px solid #1888f5;
+        margin-right: 2rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+
+      .nav-tabs .nav-link:hover{
+        border: 3px solid #1888f5;
+      }
+    </style>
+</head>
+<body class="bg-light">
+    <h2 class="text-center">Contact now</h2>
+       <hr>
+       <ul class="nav nav-tabs justify-content-center">
+         <li class="nav-item"><a class="nav-link" href="index.html">Pre-Sales</a></li>
+         <li class="nav-item"><a class="nav-link" href="project_proposal.html">Project Propsal</a></li>
+         <li class="nav-item"><a class="nav-link active" href="#other">Other</a></li>
+       </ul>
+       <br>
+    <div class="container bg-white">
+      <div class="row" id="other">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="password" class="form-label">First Name *</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name *">
+            </div>
+            <div class="mb-3">
+                <label for="subject" class="form-label">Subject *</label>
+                <input type="text" class="form-control" id="email" placeholder="Your Subject *">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email *</label>
+              <input type="email" class="form-control" id="email" placeholder="Your Email *">
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="form-group">
+              <label for="message" class="form-label">Message *</label>
+                <textarea name="message" class="form-control" id="message" cols="30" rows="6" placeholder="Your Message"></textarea>
+            </div>
+          </div>
+          <div class="button text-center">
+            <input type="submit" class="btn btn-primary text-center" value="SEND">
+          </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
